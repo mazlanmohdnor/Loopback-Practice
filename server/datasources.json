@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "data.json"
+  },
+  "mylooback": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "mysql://root:@localhost/myloopback",
+    "database": "myloopback",
+    "password": "",
+    "name": "mylooback",
+    "user": "root",
+    "connector": "mysql"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "complaint",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "category": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "string"
+    },
+    "medium": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customers": {
+      "type": "hasMany",
+      "model": "customer",
+      "foreignKey": "",
+      "through": "customercomplaint"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

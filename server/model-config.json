@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mylooback",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mylooback",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mylooback",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mylooback",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mylooback",
+    "public": false
+  },
+  "customer": {
+    "dataSource": "mylooback",
+    "public": true
+  },
+  "complaint": {
+    "dataSource": "mylooback",
+    "public": true
+  },
+  "customercomplaint": {
+    "dataSource": "mylooback",
+    "public": false
+  },
+  "appuser": {
+    "dataSource": "mylooback",
+    "public": true
+  }
+}

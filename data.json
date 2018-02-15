@@ -1,0 +1,20 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "customer": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "customer": {
+      "1": "{\"name\":\"afiqah\",\"address\":\"string\",\"DOB\":\"2017-11-28T14:04:47.624Z\",\"phoneNum\":\"string\",\"id\":1}"
+    }
+  }
+}

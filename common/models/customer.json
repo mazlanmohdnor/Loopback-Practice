@@ -1,0 +1,41 @@
+{
+  "name": "customer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "date"
+    },
+    "phoneNum": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "complaints": {
+      "type": "hasMany",
+      "model": "complaint",
+      "foreignKey": "",
+      "through": "customercomplaint"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}
